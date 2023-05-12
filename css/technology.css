@@ -1,0 +1,63 @@
+body {
+  background-image: url("/images/technology/background-technology-desktop.jpg");
+}
+.but_desc {
+  display: flex;
+  gap: 75px;
+  padding-top: 100px;
+}
+
+.tech_buttons {
+  display: grid;
+  gap: 50px;
+}
+
+.tech_buttons > button {
+  width: 80px;
+  border-radius: 50%;
+  aspect-ratio: 1/1;
+  background: none;
+  font-size: 25px;
+}
+
+#tech_desc :nth-child(1) {
+  font-size: 15px;
+  animation: come 0.5s ease-out;
+}
+
+#tech_desc :nth-child(2) {
+  padding-top: 30px;
+  font-size: 40px;
+  animation: come 1s ease-in;
+}
+
+#tech_desc :nth-child(3) {
+  padding-top: 30px;
+  line-height: 30px;
+  animation: come 1.5s ease-out;
+}
+
+.tech_buttons :hover {
+  background-color: white;
+  color: black;
+}
+#techImage > img {
+  animation: grow 2s ease-in-out;
+}
+
+@keyframes come {
+  from {
+    transform: scale(0) translate(-100%, -100%);
+  }
+  to {
+    transform: scale(1) translate(0, 0);
+  }
+}
+@keyframes grow {
+  from {
+    transform: scale(0) translate(50%, 50%);
+  }
+  to {
+    transform: scale(1) translate(0, 0);
+  }
+}

@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link rel="stylesheet" href="/style.css" />
+    <link rel="stylesheet" href="/css/crew.css" />
+    <script src="/scripts/crew.js" defer></script>
+  </head>
+  <body>
+    <header>
+      <div>
+        <img src="/images/shared/logo.svg" alt="" />
+        <div class="line"></div>
+      </div>
+      <div class="glass">
+        <nav>
+          <a href="/index.html">00 HOME</a>
+          <a href="/pages/destination.html">01 DESTINATION</a>
+          <a href="/pages/crew.html" class="linkSelected">02 CREW</a>
+          <a href="/pages/technology.html">03 TECHNOLOGY</a>
+        </nav>
+      </div>
+    </header>
+    <main class="crewMain">
+      <section id="crewDesc">
+        <h1><span>02</span>MEET YOUR CREW</h1>
+        <div id="crew_desc"></div>
+        <div class="crew_links">
+          <button onclick="changeCrewInfo('DouglasH')">1</button>
+          <button onclick="changeCrewInfo('MarkS')">2</button>
+          <button onclick="changeCrewInfo('VictorG')">3</button>
+          <button onclick="changeCrewInfo('AnoushehA')">4</button>
+        </div>
+      </section>
+      <section id="crewImage"></section>
+    </main>
+  </body>
+</html>

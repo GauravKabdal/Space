@@ -1,0 +1,72 @@
+body {
+  background-image: url("/images/destination/background-destination-desktop.jpg");
+}
+
+.dis_time {
+  display: flex;
+  gap: 30px;
+  padding-top: 20px;
+}
+
+.desDesc {
+  padding-top: 100px;
+}
+
+.desImage:nth-child(2) {
+  padding-top: 100px;
+  animation: grow 0.5s ease-in;
+}
+
+.desMain {
+  display: flex;
+  gap: 150px;
+}
+
+.moonLinks {
+  display: flex;
+  gap: 15px;
+}
+
+.moonLinks > button {
+  background: none;
+  border: none;
+}
+
+#moon_desc :nth-child(1) {
+  font-size: 100px;
+}
+
+#moon_desc > p {
+  line-height: 30px;
+}
+
+.moonLinks :hover {
+  color: yellow;
+  cursor: pointer;
+}
+
+#moon_desc :nth-child(1) {
+  animation: come 1s ease-out;
+}
+
+#moon_desc :nth-child(2) {
+  animation: come 1.5s ease-out;
+}
+
+@keyframes grow {
+  from {
+    transform: scale(0) translate(50%, 50%);
+  }
+  to {
+    transform: scale(1) translate(0, 0);
+  }
+}
+
+@keyframes come {
+  from {
+    transform: scale(0) translate(-100%, -100%);
+  }
+  to {
+    transform: scale(1) translate(0, 0);
+  }
+}

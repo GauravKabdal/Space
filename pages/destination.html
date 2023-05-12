@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Space Tour</title>
+    <link rel="stylesheet" href="/style.css" />
+    <link rel="stylesheet" href="/css/destination.css" />
+    <script src="/scripts/destination.js" defer></script>
+  </head>
+
+  <body>
+    <header>
+      <div>
+        <img src="/images/shared/logo.svg" alt="" />
+        <div class="line"></div>
+      </div>
+      <div class="glass">
+        <nav>
+          <a href="/index.html">00 HOME</a>
+          <a href="/pages/destination.html" class="linkSelected"
+            >01 DESTINATION</a
+          >
+          <a href="/pages/crew.html">02 CREW</a>
+          <a href="/pages/technology.html">03 TECHNOLOGY</a>
+        </nav>
+      </div>
+    </header>
+    <main class="desMain">
+      <section id="desImage">
+        <h1><span>01</span> PICK YOUR DESTINATION</h1>
+      </section>
+      <section class="desDesc">
+        <div class="moonLinks">
+          <button onclick="changeDesInfo('MOON')">MOON</button>
+          <button onclick="changeDesInfo('MARS')">MARS</button>
+          <button onclick="changeDesInfo('EUROPA')">EUROPA</button>
+          <button onclick="changeDesInfo('TITAN')">TITAN</button>
+        </div>
+        <div id="moon_desc"></div>
+        <br />
+        <div class="line"></div>
+        <div class="dis_time">
+          <div id="avg_dis">
+            <h2>AVG. DISTANCE</h2>
+          </div>
+          <div id="avg_time">
+            <h2>EST. TIME</h2>
+          </div>
+        </div>
+      </section>
+    </main>
+  </body>
+</html>

@@ -1,0 +1,43 @@
+body {
+  background-image: url("../images/home/background-home-desktop.jpg");
+}
+
+.homeMain > section > h1:nth-child(1) {
+  font-weight: 500;
+  font-size: 2rem;
+}
+
+.homeMain > section > h1:nth-child(2) {
+  font-weight: 500;
+  font-size: 8rem;
+}
+
+.homeMain > section > p {
+  font-size: 1.1rem;
+  word-spacing: 1px;
+  line-height: 1.2;
+}
+
+.homeMain > section:nth-child(2) {
+  display: flex;
+  align-items: center;
+  justify-content: flex-end;
+}
+.circle {
+  width: 280px;
+  aspect-ratio: 1/1;
+  background-color: white;
+  color: black;
+  font-size: 2rem;
+  border-radius: 50%;
+  display: grid;
+  place-content: center;
+  cursor: pointer;
+  text-transform: uppercase;
+  letter-spacing: 5px;
+  transition: all 0.5s;
+}
+
+.circle:hover {
+  box-shadow: 0 0 0 50px rgb(82, 78, 78);
+}
